@@ -8,6 +8,16 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/miami.jpeg");
@@ -54,13 +64,44 @@ header a {
   display: inline-block;
 }
 
-footer,
-footer a {
-  color: lightgrey;
-  text-align: center;
+footer {
+  color: aliceblue;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/miami-2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
 }
 
-@media (max-width: 900px) {
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 20px;
+  opacity: 0.7;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: aliceblue;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
