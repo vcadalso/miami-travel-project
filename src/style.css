@@ -57,6 +57,7 @@ header a {
 footer,
 footer a {
   color: lightgrey;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
